@@ -4,6 +4,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { PagEjemplosComponent } from './pag-ejemplos/pag-ejemplos.component';
 import { PagPreguntasComponent } from './pag-preguntas/pag-preguntas.component';
 import { PagVideosComponent } from './pag-videos/pag-videos.component';
+import { PagLinksComponent } from './pag-links/pag-links.component';
 
 const routes: Routes = [
   {
@@ -24,6 +25,11 @@ const routes: Routes = [
   {
     path : 'app-pag-videos',
     component : PagVideosComponent,
+    pathMatch : 'full',
+  },
+  {
+    path : 'app-pag-links',
+    component : PagLinksComponent,
     pathMatch : 'full',
   },
 ];
